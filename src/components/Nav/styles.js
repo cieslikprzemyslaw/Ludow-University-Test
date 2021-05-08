@@ -9,7 +9,7 @@ import { Pink } from '../../assets/GlobalStyles/globalStyles';
 
 // Component scoped imports.
 
-export const MobileNav = styled.nav`
+export const Nav = styled.nav`
     display: none;
     
     width: 100%;

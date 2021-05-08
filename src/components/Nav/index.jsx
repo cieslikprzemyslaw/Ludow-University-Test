@@ -4,7 +4,7 @@ import React from "react";
 // Project scoped imports.
 
 // Component scoped imports.
-import { LudowLogo, MobileNav, Search, Wrapper } from "./styles";
+import { LudowLogo, Nav, Search, Wrapper } from "./styles";
 import NavList from "./NavList";
 
 /**
@@ -16,13 +16,13 @@ import NavList from "./NavList";
 
 const index = () => {
   return (
-    <MobileNav>
+    <Nav>
       <LudowLogo />
       <Wrapper>
         <NavList />
         <Search/>
       </Wrapper>
-    </MobileNav>
+    </Nav>
   );
 };
 
