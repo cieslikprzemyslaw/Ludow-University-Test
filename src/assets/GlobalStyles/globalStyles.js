@@ -53,11 +53,11 @@ export const White = () => css`
 `;
 
 export const DarkGrey = () => css`
-    background: #333333;
+    color: #333333;
 `;
 
 export const Pink = () => css`
-    background: #FF227F;
+    color: #FF227F;
 `;
 
 export const HotFrost = () => css`
