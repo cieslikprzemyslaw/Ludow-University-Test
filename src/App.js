@@ -1,12 +1,14 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './Routes';
-import GlobalStyles from "./assets/GlobalStyles";
+import GlobalStyles from './assets/GlobalStyles';
+import Nav from './components/MobileNav/';
 
 function App() {
   return (
     <main>
       <Router>
         <GlobalStyles />
+        <Nav/>
         <Routes />
       </Router>
     </main>
