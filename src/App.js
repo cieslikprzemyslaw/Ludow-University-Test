@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './Routes';
 import GlobalStyles from './assets/GlobalStyles';
-import Nav from './components/MobileNav/';
+import Nav from './components/Nav/';
 
 function App() {
   return (
