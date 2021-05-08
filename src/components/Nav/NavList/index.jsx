@@ -15,39 +15,38 @@ import { LinkItem, ListItem, MenuList, Name } from "./styles";
  */
 
 const index = () => {
+  const listOfItems = [
+    {
+      id: 1,
+      name: "Study",
+      link: "/#",
+    },
+    {
+      id: 2,
+      name: "Resarch",
+      link: "/#",
+    },
+    {
+      id: 3,
+      name: "About Us",
+      link: "/#",
+    },
+  ];
 
-    const listOfItems = [
-      {
-        id: 1,
-        name: "Study",
-        link: "/#",
-      },
-      {
-        id: 2,
-        name: "Resarch",
-        link: "/#",
-      },
-      {
-        id: 3,
-        name: "About Us",
-        link: "/#",
-      },
-    ];
-
-    return (
-        <MenuList>
-            {listOfItems.map(item => {
-                const {id, name, link} = item
-                return(
-                    <ListItem key={id}>
-                        <LinkItem to={link}>
-                            <Name>{name}</Name>
-                        </LinkItem>
-                    </ListItem>
-                );
-            })}
-        </MenuList>
-    );
+  return (
+    <MenuList>
+      {listOfItems.map((item) => {
+        const { id, name, link } = item;
+        return (
+          <ListItem key={id}>
+            <LinkItem to={link}>
+              <Name>{name}</Name>
+            </LinkItem>
+          </ListItem>
+        );
+      })}
+    </MenuList>
+  );
 };
 
 export default index;

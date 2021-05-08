@@ -14,6 +14,7 @@ export const Menu = styled.section`
     position: fixed;
     top:0;
     left:0;
+    z-index: 2;
 
     display: flex;
     align-items: center;
@@ -21,7 +22,6 @@ export const Menu = styled.section`
 
     width: 100%;
     height: 100vh;
-    z-index: 2;
     ${White}
 `;
 
@@ -30,8 +30,6 @@ export const Wrapper = styled.section`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-    margin: auto 0;
 
     width: 100%;
     height: 80%;
@@ -42,9 +40,10 @@ export const MenuList = styled.ul`
     flex: 1;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+
     list-style: none;
     text-decoration: none;
+    text-align: center;
 `;
 
 export const ListItem = styled.li`

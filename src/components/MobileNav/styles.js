@@ -12,6 +12,7 @@ export const MobileNavigation = styled.nav`
     position: fixed;
     top:0;
     left:0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +38,7 @@ export const OpenMenu = styled(GrMenu)`
     top: 31px;
     right: 5vw;
     z-index: 5;
+
     font-size: 25px;
 
 `;
@@ -46,5 +48,6 @@ export const CloseMenu = styled(GrFormClose)`
     top: 31px;
     right:5vw;
     z-index: 5;
+    
     font-size: 25px;
 `;
