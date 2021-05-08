@@ -35,6 +35,7 @@ export const h4 = () => css`
 export const h5 = () => css`
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 120%;
 
     ${respondTo.lg`
@@ -49,7 +50,7 @@ export const p = () => css`
 `;
 
 export const White = () => css`
-    background: '#FFFFFF';
+    background-color: #FFF;
 `;
 
 export const DarkGrey = () => css`
