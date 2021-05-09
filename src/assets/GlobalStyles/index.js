@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import './index.css';
-import { h1, h3, h4, h5, p } from './globalStyles';
+import { DarkGrey, h1, h3, h4, h5, p } from './globalStyles';
 
 export default createGlobalStyle`
 * {
@@ -20,6 +20,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 1.6rem ;
   background-color: #fff;
+  ${DarkGrey}
   font-weight: 300 ;
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

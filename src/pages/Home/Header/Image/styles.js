@@ -1,10 +1,10 @@
 // Deps scoped imports.
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // Project scoped imports.
-import { respondTo } from '../../../assets/GlobalStyles/respondTo';
-import Image from '../../../assets/images/person.png';
-import LogoIcon from '../../../assets/images/logoIcon.png';
+import { respondTo } from '../../../../assets/GlobalStyles/respondTo';
+import Image from '../../../../assets/images/person.png';
+import LogoIcon from '../../../../assets/images/logoIcon.png';
 
 // Component scoped imports.
 

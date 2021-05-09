@@ -1,9 +1,9 @@
 // Deps scoped imports.
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // Project scoped imports.
-import { respondTo } from '../../../assets/GlobalStyles/respondTo';
-import { SupportingCopy } from "../../../assets/GlobalStyles/globalStyles";
+import { respondTo } from '../../../../assets/GlobalStyles/respondTo';
+import { SupportingCopy } from '../../../../assets/GlobalStyles/globalStyles';
 
 // Component scoped imports.
 
@@ -52,6 +52,8 @@ export const Button = styled.button`
     border-image-source: linear-gradient(98.01deg, #00C2FF 14.16%, #FF27C3 79.91%);
     border-width: 1px;
     border-image-slice: 1;
+
+    cursor: pointer;
 `;
 
 export const ButtonText = styled.h5``;

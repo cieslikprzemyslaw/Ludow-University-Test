@@ -1,11 +1,11 @@
 // Deps scoped imports.
-import React from "react";
-import { HeaderSection, PageInformation } from "./styles";
+import React from 'react';
+import { HeaderSection, PageInformation } from './styles';
 
 // Project scoped imports.
 
 // Component scoped imports.
-import PersonSection from "./PersonSection";
+import PersonSection from './PersonSection';
 import Image from './Image';
 
 /**

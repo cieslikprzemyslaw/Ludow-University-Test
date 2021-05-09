@@ -1,6 +1,6 @@
 // Deps scoped imports.
 import styled from 'styled-components';
-import { BiSearch } from "react-icons/bi";
+import { BiSearch } from 'react-icons/bi';
 
 // Project scoped imports.
 import { respondTo } from '../../assets/GlobalStyles/respondTo';
@@ -9,7 +9,7 @@ import { Pink } from '../../assets/GlobalStyles/globalStyles';
 
 // Component scoped imports.
 
-export const Nav = styled.nav`
+export const NavComponent = styled.nav`
     display: none;
     
     width: 100%;
@@ -28,6 +28,8 @@ export const LudowLogo = styled.img.attrs(props => ({
 }))`
     margin: 20px 80px;
     width: min-content;
+
+    cursor: pointer;
 `;
 
 export const Wrapper = styled.section`

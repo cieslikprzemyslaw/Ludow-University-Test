@@ -1,7 +1,7 @@
 // Deps scoped imports.
-import styled from "styled-components";
+import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import { DarkGrey } from "../../../assets/GlobalStyles/globalStyles";
+import { DarkGrey } from '../../../assets/GlobalStyles/globalStyles';
 
 // Project scoped imports.
 // import { respondTo } from "../../common/respondTo";

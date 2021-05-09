@@ -1,6 +1,5 @@
 // Deps scoped imports.
 import React from "react";
-import { Link } from "react-router-dom";
 import { LinkItem, ListItem, MenuList, Name } from "./styles";
 
 // Project scoped imports.
@@ -19,17 +18,17 @@ const index = () => {
     {
       id: 1,
       name: "Study",
-      link: "/#",
+      link: "/study",
     },
     {
       id: 2,
       name: "Resarch",
-      link: "/#",
+      link: "/research",
     },
     {
       id: 3,
       name: "About Us",
-      link: "/#",
+      link: "/about",
     },
   ];
 

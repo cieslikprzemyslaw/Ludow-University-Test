@@ -1,9 +1,9 @@
 // Deps scoped imports.
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // Project scoped imports.
-import { respondTo } from '../../assets/GlobalStyles/respondTo';
-import { LinkTextSmall } from "../../assets/GlobalStyles/globalStyles";
+import { respondTo } from '../../../assets/GlobalStyles/respondTo';
+import { LinkTextSmall } from '../../../assets/GlobalStyles/globalStyles';
 
 // Component scoped imports.
 
