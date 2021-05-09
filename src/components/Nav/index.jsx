@@ -1,29 +1,34 @@
 // Deps scoped imports.
 import React from "react";
-
+import { useHistory } from "react-router-dom";
 // Project scoped imports.
 
 // Component scoped imports.
-import { LudowLogo, Nav, Search, Wrapper } from "./styles";
+import { LudowLogo, NavComponent, Search, Wrapper } from "./styles";
 import NavList from "./NavList";
 
 /**
  * Example component.
- * @description This is an example component including translations and theming.
+ * @description This component is displayed on desktop devices. Sits at top of the layout, above the hero section.
  * @version 1.0.0
  * @author Przemyslaw Cieslik <cprzemek91@hotmail.com>
  */
 
-const index = () => {
+const Nav = () => {
+  const history = useHistory();
+
+  const pushHomePage = () => {
+    history.push("/");
+  };
   return (
-    <Nav>
-      <LudowLogo />
+    <NavComponent>
+      <LudowLogo onClick={pushHomePage} />
       <Wrapper>
         <NavList />
-        <Search/>
+        <Search />
       </Wrapper>
-    </Nav>
+    </NavComponent>
   );
 };
 
-export default index;
+export default Nav;
