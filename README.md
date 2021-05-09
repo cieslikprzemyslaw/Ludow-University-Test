@@ -9,6 +9,11 @@ That's all. I didn't want to use more packages because I didn't see any advantag
 
 ## URL:  https://ludlow-university-test.netlify.app/
 
+## What could I have done better
+1. Create a component for Button and implement this in every place where I want to. 
+2. Create a component for the Card section and use path something like "/card/:id" for rendering view for clubs, accommodations etc. 
+
+
 ## Structure Ludlow University Test: 
 │   App.js
 │   index.js
