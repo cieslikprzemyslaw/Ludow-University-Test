@@ -14,46 +14,42 @@ import {
 
 // Component scoped imports.
 
+const NAV_MENU_ITEMS = Object.freeze([
+  {
+    id: 1,
+    name: "Study",
+    link: "/study",
+  },
+  {
+    id: 2,
+    name: "Resarch",
+    link: "/research",
+  },
+  {
+    id: 3,
+    name: "About Us",
+    link: "/about",
+  },
+]);
+
 /**
  * Example component.
  * @description This is an example component including translations and theming.
  * @version 1.0.0
  * @author Przemyslaw Cieslik <cprzemek91@hotmail.com>
  */
-
 const NavList = () => {
-  const listOfItems = [
-    {
-      id: 1,
-      name: "Study",
-      link: "/#",
-    },
-    {
-      id: 2,
-      name: "Resarch",
-      link: "/#",
-    },
-    {
-      id: 3,
-      name: "About Us",
-      link: "/#",
-    },
-  ];
-
   return (
     <Menu>
       <Wrapper>
         <MenuList>
-          {listOfItems.map((item) => {
-            const { id, name, link } = item;
-            return (
-              <ListItem key={id}>
-                <LinkItem to={link}>
-                  <Name>{name}</Name>
-                </LinkItem>
-              </ListItem>
-            );
-          })}
+          {NAV_MENU_ITEMS.map(({ id, name, link }) => (
+            <ListItem key={id}>
+              <LinkItem to={link}>
+                <Name>{name}</Name>
+              </LinkItem>
+            </ListItem>
+          ))}
         </MenuList>
         <Search />
       </Wrapper>
