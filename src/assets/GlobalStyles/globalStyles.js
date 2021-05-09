@@ -78,6 +78,10 @@ export const White = () => css`
     background-color: #FFF;
 `;
 
+export const WhiteText = () => css`
+    color: #FFF;
+`;
+
 export const DarkGrey = () => css`
     color: #333333;
 `;
@@ -87,7 +91,8 @@ export const Pink = () => css`
 `;
 
 export const HotFrost = () => css`
-    background: linear-gradient(98.01deg, #00C2FF 14.16%, #FF27C3 79.91%);
+    background: rgb(0,194,255);
+    background: linear-gradient(98deg, rgba(0,194,255,1) 0%, rgba(255,39,195,1) 79%);
 `;
 
 export const Slate = () => css`
