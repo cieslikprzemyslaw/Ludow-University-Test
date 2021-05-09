@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+### Technologies used in the project: 
+React - It is a test for React Developer role that's why I decided to use React. I considered between GatsbyJs and React but it is a little different with using routing in projects. Gatsby has better optimization for images and it is better for SEO, but like I said I wrote the project in React because I want to show I know React Route DOM.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Router DOM - I used this to change the URL path and change the view between sites. (All buttons are clickable)
 
-## Available Scripts
+Styled Components - It is a library for creating CSS-in-JS. I thought to use SASS(SCSS) here the advantage of styled-components is that it generates separate class names for each tag and has the same tools that can be used in SASS.
 
-In the project directory, you can run:
+That's all. I didn't want to use more packages because I didn't see any advantages but I wanted the project to be light
 
-### `npm start`
+## URL:  https://ludlow-university-test.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What could I have done better
+1. Create a component for Button and implement this in every place where I want to. 
+2. Create a component for the Card section and use path something like "/card/:id" for rendering view for clubs, accommodations etc. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Structure Ludlow University Test: 
+```
+│   App.js
+│   index.js
+│   reportWebVitals.js
+│   Routes.jsx
+│
+├───assets
+│   ├───GlobalStyles
+│   │       breakpoints.js
+│   │       globalStyles.js
+│   │       index.css
+│   │       index.js
+│   │       respondTo.js
+│   │
+│   └───images
+│       │   backgroundLogo.png
+│       │   banner-image.png
+│       │   logo.png
+│       │   logoColoured.png
+│       │   logoIcon.png
+│       │   person.png
+│       │
+│       ├───cards
+│       │       accommodation.png
+│       │       activities.png
+│       │       bike.png
+│       │       girl.png
+│       │       support.png
+│       │
+│       └───events
+│               game.png
+│               rock.png
+│               study.png
+│
+├───components
+│   ├───Footer
+│   │   │   index.jsx
+│   │   │   styles.js
+│   │   │
+│   │   ├───SocialMedia
+│   │   │       index.jsx
+│   │   │       styles.js
+│   │   │
+│   │   └───Twett
+│   │           index.jsx
+│   │           styles.js
+│   │
+│   ├───MobileNav
+│   │   │   index.jsx
+│   │   │   styles.js
+│   │   │
+│   │   └───NavList
+│   │           index.jsx
+│   │           styles.js
+│   │
+│   └───Nav
+│       │   index.jsx
+│       │   styles.js
+│       │
+│       └───NavList
+│               index.jsx
+│               styles.js
+│
+└───pages
+    ├───About
+    │       index.jsx
+    │
+    ├───BookOpenDay
+    │       index.jsx
+    │
+    ├───Events
+    │       index.jsx
+    │
+    ├───Home
+    │   │   index.jsx
+    │   │   styles.js
+    │   │
+    │   ├───Banner
+    │   │       index.jsx
+    │   │       styles.js
+    │   │
+    │   ├───Cards
+    │   │   │   index.jsx
+    │   │   │   styles.js
+    │   │   │
+    │   │   ├───IrregularCards
+    │   │   │       index.jsx
+    │   │   │       styles.js
+    │   │   │
+    │   │   └───RegularCards
+    │   │           index.jsx
+    │   │           styles.js
+    │   │
+    │   ├───Header
+    │   │   │   index.jsx
+    │   │   │   styles.js
+    │   │   │
+    │   │   ├───Image
+    │   │   │       index.jsx
+    │   │   │       styles.js
+    │   │   │
+    │   │   └───PersonSection
+    │   │           index.jsx
+    │   │           styles.js
+    │   │
+    │   └───UpcomingEvents
+    │       │   index.jsx
+    │       │   styles.js
+    │       │
+    │       └───EventCard
+    │               index.jsx
+    │               styles.js
+    │
+    ├───Research
+    │       index.jsx
+    │
+    ├───Stories
+    │       index.jsx
+    │
+    └───Study
+            index.jsx
+```
