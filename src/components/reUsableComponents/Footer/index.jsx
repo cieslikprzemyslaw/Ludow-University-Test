@@ -8,17 +8,9 @@ import {
   Footer,
   SocialSection,
   Image,
-  TweetSection,
-  Header,
-  TweetAuthor,
-  SmallLogo,
-  Title,
-  Subtitle,
-  Tweet,
-  Post,
-  Time,
 } from "./styles";
 import SocialMedia from "./SocialMedia";
+import Twett from "./Twett";
 
 /**
  * Example component.
@@ -34,20 +26,7 @@ const index = () => {
         <Image />
         <SocialMedia />
       </SocialSection>
-      <TweetSection>
-        <Header>
-          <TweetAuthor>
-            <SmallLogo />
-            <div>
-              <Title>Ludlow University</Title>
-              <Subtitle>@ludlowuni</Subtitle>
-            </div>
-          </TweetAuthor>
-          <Tweet />
-        </Header>
-        <Post></Post>
-        <Time></Time>
-      </TweetSection>
+      <Twett />
     </Footer>
   );
 };
