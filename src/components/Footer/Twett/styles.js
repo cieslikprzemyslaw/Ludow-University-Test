@@ -3,14 +3,18 @@ import styled from 'styled-components';
 import { AiOutlineTwitter } from 'react-icons/ai';
 
 // Project scoped imports.
-// import { respondTo } from '../../../assets/GlobalStyles/respondTo';
+import { respondTo } from '../../../assets/GlobalStyles/respondTo';
 import LogoIcon from '../../../assets/images/logoColoured.png';
 
 // Component scoped imports.
 
 export const TweetSection = styled.section`
     width: 400px;
-    margin: 88px 80px 0 0;
+    margin: 88px 5vw;
+
+    ${respondTo.lg`
+        margin: 88px 80px 0 0;
+    `}
 `;
 
 export const Header = styled.header`

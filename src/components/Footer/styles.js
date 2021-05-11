@@ -14,12 +14,10 @@ export const Footer = styled.footer`
     flex-wrap: wrap;
     justify-content: center;
 
-    margin: 0 5vw 0 5vw;
-    border-top: 2px solid #F5F5F6;
     min-height: 400px;
+    border-top: 2px solid #F5F5F6;
 
     ${respondTo.lg`
-        margin: 104px 80px 0 80px;
         justify-content: space-between;
     `}
 `;
@@ -32,15 +30,28 @@ export const SocialSection = styled.section`
     background-image: url(${BackgroundLogo});
     background-repeat: no-repeat;
     background-position: center;
+
+    margin: 0 auto;
+    min-height: 250px;
     min-width: 400px;
+
+    ${respondTo.lg`
+        margin: 0 0 0 80px;
+    `}
 `;
 
 export const Image = styled.img.attrs({
     src: Logo,
     alt: "logo",
 })`
-    margin: 65px 0 0 0;
+
     width: 158px;
     height: 46px;
+
+    margin: 64px auto;
+
+    ${respondTo.lg`
+        margin: 64px 0 0 0;
+    `}
 `;
 
