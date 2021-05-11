@@ -32,7 +32,7 @@ export const Wrapper = styled.section`
     align-items: center;
 
     width: 100%;
-    height: 80%;
+    height: 50%;
 `;
 
 export const MenuList = styled.ul`
