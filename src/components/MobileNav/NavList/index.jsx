@@ -38,14 +38,14 @@ const NAV_MENU_ITEMS = Object.freeze([
  * @version 1.0.0
  * @author Przemyslaw Cieslik <cprzemek91@hotmail.com>
  */
-const NavList = () => {
+const NavList = ({closeMenu}) => {
   return (
     <Menu>
       <Wrapper>
         <MenuList>
           {NAV_MENU_ITEMS.map(({ id, name, link }) => (
             <ListItem key={id}>
-              <LinkItem to={link}>
+              <LinkItem to={link} onClick={closeMenu}>
                 <Name>{name}</Name>
               </LinkItem>
             </ListItem>
