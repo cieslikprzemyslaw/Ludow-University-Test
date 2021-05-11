@@ -8,7 +8,7 @@ import { Pink } from '../../../../assets/GlobalStyles/globalStyles';
 
 // Component scoped imports.
 
-export const CardSection = styled.section`
+export const CardSection = styled.figure`
     margin-top: 120px;
 `;
 
@@ -18,12 +18,18 @@ export const ImagesWrapper = styled.section`
     justify-content: space-around;
     align-items: center;
 
+    figure:nth-last-child(1){
+        margin-bottom: 120px;
+
+        ${respondTo.lg`
+        margin-bottom: 0;
+        `}
+    }
+
     ${respondTo.xxl`
         justify-content: space-between;
     `}
 `;
-
-export const ImageWrapper = styled.figure``;
 
 export const Image = styled.img``;
 

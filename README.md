@@ -1,4 +1,7 @@
-## Technologies used in the project: 
+
+
+### Technologies used in the project: 
+
 React - It is a test for React Developer role that's why I decided to use React. I considered between GatsbyJs and React but it is a little different with using routing in projects. Gatsby has better optimization for images and it is better for SEO, but like I said I wrote the project in React because I want to show I know React Route DOM.
 
 React Router DOM - I used this to change the URL path and change the view between sites. (All buttons are clickable)

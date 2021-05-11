@@ -27,6 +27,10 @@ const MobileNav = () => {
     history.push("/");
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <>
       <MobileNavigation>
@@ -36,7 +40,7 @@ const MobileNav = () => {
         ) : (
           <OpenMenu onClick={handleClick} />
         )}
-        {isMenuOpen && <NavList />}
+        {isMenuOpen && <NavList closeMenu={closeMenu}/>}
       </MobileNavigation>
     </>
   );
