@@ -8,7 +8,7 @@ import LogoIcon from '../../../assets/images/logoColoured.png';
 
 // Component scoped imports.
 
-export const TweetSection = styled.section`
+export const TwettSection = styled.section`
     width: 400px;
     margin: 88px 5vw;
 
@@ -23,12 +23,12 @@ export const Header = styled.header`
     align-self: center;
 `;
 
-export const TweetAuthor = styled.header`
+export const TwettAuthor = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 40%;
+    width: 165px;
 `;
 
 export const SmallLogo = styled.img.attrs({
@@ -73,4 +73,6 @@ export const Time = styled.p`
     line-height: 16px;
 `;
 
-export const Author = styled.section``;
+export const Author = styled.section`
+    margin-left:18px;
+`;

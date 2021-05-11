@@ -5,9 +5,9 @@ import React from 'react';
 
 // Component scoped imports.
 import {
-  TweetSection,
+  TwettSection,
   Header,
-  TweetAuthor,
+  TwettAuthor,
   SmallLogo,
   Title,
   Subtitle,
@@ -27,15 +27,15 @@ import {
 
 const Twett = () => {
     return (
-      <TweetSection>
+      <TwettSection>
         <Header>
-          <TweetAuthor>
+          <TwettAuthor>
             <SmallLogo />
             <Author>
               <Title>Ludlow University</Title>
               <Subtitle>@ludlowuni</Subtitle>
             </Author>
-          </TweetAuthor>
+          </TwettAuthor>
           <TwettLogo />
         </Header>
         <Post>
@@ -44,7 +44,7 @@ const Twett = () => {
           charities. #runformoney.
         </Post>
         <Time>11:44 AM · Jul 10, 2019</Time>
-      </TweetSection>
+      </TwettSection>
     );
 };
 
