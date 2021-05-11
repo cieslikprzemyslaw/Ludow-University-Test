@@ -12,11 +12,11 @@ import Accommodation from "../../../../assets/images/cards/accommodation.png";
 
 export const CardSection = styled.section`
     margin-top: 120px;
-    margin-bottom: 168px;
+    margin-bottom: 80px;
     position: relative;
 
     ${respondTo.lg`
-        margin-top: 0;
+        margin-bottom: 168px;
     `};
 `;
 
@@ -38,8 +38,14 @@ export const FirstImage = styled.img.attrs({
     alt: 'People on Holi Festival Of Colours',
     loading: 'lazy',
 })`
+    height: max-content;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    max-width: 510px;
+
+    ${respondTo.xxl`
+        max-width: 730px;
+    `}
 `;
 
 export const SecondImage = styled.img.attrs({
@@ -47,8 +53,9 @@ export const SecondImage = styled.img.attrs({
     alt: 'housing estate',
     loading: 'lazy',
 })`
+    height: max-content;
     width: 100%;
-    height: auto;
+    object-fit: cover;
 `;
 
 export const TextWrapper = styled.figcaption`
