@@ -34,18 +34,21 @@ const NAV_MENU_ITEMS = Object.freeze([
 
 /**
  * Example component.
- * @description This is an example component including translations and theming.
+ * @description This Component render menu on bottom .
  * @version 1.0.0
  * @author Przemyslaw Cieslik <cprzemek91@hotmail.com>
  */
-const NavList = ({closeMenu}) => {
+const NavList = ({ closeMenu }) => {
   return (
     <Menu>
       <Wrapper>
         <MenuList>
           {NAV_MENU_ITEMS.map(({ id, name, link }) => (
             <ListItem key={id}>
-              <LinkItem to={link} onClick={closeMenu}>
+              <LinkItem
+                to={link}
+                onClick={closeMenu}
+              >
                 <Name>{name}</Name>
               </LinkItem>
             </ListItem>
