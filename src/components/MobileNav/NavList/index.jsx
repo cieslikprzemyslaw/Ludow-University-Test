@@ -22,7 +22,7 @@ const NAV_MENU_ITEMS = Object.freeze([
   },
   {
     id: 2,
-    name: "Resarch",
+    name: "Research",
     link: "/research",
   },
   {
