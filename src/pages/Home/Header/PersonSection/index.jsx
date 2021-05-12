@@ -11,7 +11,6 @@ import {
   Hero,
   Title,
   StudentTitle,
-  ButtonText,
   TextWrapper,
 } from "./styles";
 import Button from '../../../../components/Button';

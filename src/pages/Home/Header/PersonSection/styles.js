@@ -45,4 +45,3 @@ export const StudentTitle = styled.p`
     margin-bottom: 64px;
 `;
 
-export const ButtonText = styled.h5``;
