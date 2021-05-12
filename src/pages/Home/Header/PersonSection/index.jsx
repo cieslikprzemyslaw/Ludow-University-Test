@@ -11,10 +11,10 @@ import {
   Hero,
   Title,
   StudentTitle,
-  Button,
   ButtonText,
   TextWrapper,
 } from "./styles";
+import Button from '../../../../components/Button';
 
 /**
  * Example component.
@@ -38,9 +38,11 @@ const PersonSection = () => {
         </StudentQuote>
         <Name>Lisa Smith</Name>
         <StudentTitle>Student, BSc (Hons) Computer Games Design </StudentTitle>
-        <Button onClick={pushToStories}>
-          <ButtonText>View student stories</ButtonText>
-        </Button>
+        <Button
+          text={"View student stories"}
+          onClick={pushToStories}
+          width={294}
+        />
       </TextWrapper>
     </Hero>
   );

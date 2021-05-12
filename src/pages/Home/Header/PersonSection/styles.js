@@ -45,15 +45,4 @@ export const StudentTitle = styled.p`
     margin-bottom: 64px;
 `;
 
-export const Button = styled.button`
-    width: 290px;
-    height: 64px;
-    background-color: rgb(255 255 255);
-    border-image-source: linear-gradient(98.01deg, #00C2FF 14.16%, #FF27C3 79.91%);
-    border-width: 1px;
-    border-image-slice: 1;
-
-    cursor: pointer;
-`;
-
 export const ButtonText = styled.h5``;
