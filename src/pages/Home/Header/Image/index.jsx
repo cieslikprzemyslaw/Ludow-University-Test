@@ -16,7 +16,7 @@ import { ImageSection, PersonImage, Logo } from './styles';
 const Image = () => {
   return (
     <ImageSection>
-      <PersonImage />
+      <PersonImage loading="lazy"/>
       <Logo />
     </ImageSection>
   );

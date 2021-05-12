@@ -22,8 +22,12 @@ export const Events = styled.section`
 export const Header = styled.header`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    ${respondTo.sm`
+        justify-content: space-between;
+    `}
 `;
 
 export const Title = styled.h3`
@@ -33,24 +37,6 @@ export const Title = styled.h3`
         margin: 0;
     `}
 `;
-
-export const Button = styled.button`
-    margin: 0 auto;
-    width: 290px;
-    height: 64px;
-    background-color: rgb(255 255 255);
-    border-image-source: linear-gradient(98.01deg, #00C2FF 14.16%, #FF27C3 79.91%);
-    border-width: 1px;
-    border-image-slice: 1;
-
-    cursor: pointer;
-
-    ${respondTo.sm`
-        margin: 0;
-    `}
-`;
-
-export const ButtonText = styled.h5``;
 
 export const EventsSection = styled.main`
     display: flex;

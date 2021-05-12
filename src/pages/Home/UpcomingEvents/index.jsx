@@ -1,5 +1,6 @@
 // Deps scoped imports.
 import React from "react";
+import { useHistory } from "react-router";
 
 // Project scoped imports.
 import Rock from "../../../assets/images/events/rock.png";
@@ -7,16 +8,9 @@ import Game from "../../../assets/images/events/game.png";
 import Study from "../../../assets/images/events/study.png";
 
 // Component scoped imports.
-import {
-  Button,
-  Title,
-  Events,
-  Header,
-  EventsSection,
-  ButtonText,
-} from "./styles";
+import { Title, Events, Header, EventsSection } from "./styles";
 import EventCard from "./EventCard";
-import { useHistory } from "react-router";
+import Button from "../../../components/Button";
 
 /**
  * Example component.
@@ -61,9 +55,7 @@ const UpcommingEvents = () => {
     <Events>
       <Header>
         <Title>Upcoming events</Title>
-        <Button onClick={pushToEvents}>
-          <ButtonText>View all events</ButtonText>
-        </Button>
+        <Button text={"View all events"} onClick={pushToEvents} width={290} />
       </Header>
       <EventsSection>
         {EVENTS_LIST.map(({ id, day, month, imageSrc, alt, title }) => {
