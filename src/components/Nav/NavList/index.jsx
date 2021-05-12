@@ -22,7 +22,7 @@ const index = () => {
     },
     {
       id: 2,
-      name: "Resarch",
+      name: "Research",
       link: "/research",
     },
     {
